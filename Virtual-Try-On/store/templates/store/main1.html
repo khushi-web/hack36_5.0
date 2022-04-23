@@ -2,7 +2,7 @@
 {% load static %}
 <html>
 <head>
-	<title>ShopOn</title>
+	<title>ShopSquad</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
@@ -68,16 +68,16 @@
 	<!-- Header -->
   <header id="home" class="header">
     <!-- Navigation -->
-    <nav class="nav">
+    <nav class="navbar navbar-light my-0" style="background-color: #94d5e6;">
       <div class="navigation container">
         <div class="logo">
-          <h1>ShopOn</h1>
+          <h1>ShopSquad</h1>
         </div>
 
         <div class="menu">
           <div class="top-nav">
             <div class="logo">
-              <h1>ShopOn</h1>
+              <h1>ShopSquad</h1>
             </div>
             <div class="close">
               <i class="bx bx-x"></i>
@@ -89,7 +89,7 @@
               <a href="{% url 'home'%}" class="nav-link scroll-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="{% url 'store'%}" class="nav-link">Products</a>
+              <a href="{% url 'store'%}" class="nav-link" >Products</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link scroll-link">About</a>
@@ -121,15 +121,12 @@
     </nav>
 
      <div class="container">
-            <br>
+            <!-- <br> -->
             {% block content %}
-
 
             {% endblock content %}
     </div>
-
-	
-
+  </header>
   <!-- Footer -->
   <footer id="footer" class="section footer">
     <div class="container">

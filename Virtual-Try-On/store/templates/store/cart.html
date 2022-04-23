@@ -1,11 +1,11 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
-<div class="row">
+<div class="row" style="background-color: #60319b;">
 	<div class="col-lg-12">
-		<div class="card card-body" style="background-color: white;">
+		<div class="card card-body" style="background-color: #FFD700;">
 
-			<a  class="btn btn-secondary" href="{% url 'store' %}">&#x2190; Continue Shopping</a>
+			<a  class="btn btn-secondary" href="{% url 'store' %}" style="background-color: #60319b;">&#x2190; Continue Shopping</a>
 
 			<br>
 			<br>
@@ -14,7 +14,7 @@
 					<th><h5>Items: <strong>{{order.get_cart_items}}</strong></h5></th>
 					<th><h5>Total:<strong> ${{order.get_cart_total|floatformat:2}}</strong></h5></th>
 					<th>
-						<a  style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
+						<a  style="float:right; margin:5px; background-color: #94d5e6; color: #000000" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
 					</th>
 				</tr>
 			</table>
@@ -22,7 +22,7 @@
 		</div>
 
 		<br>
-		<div class="card card-body" style="background-color: white;">
+		<div class="card card-body" style="background-color: #FFD700;">
 			<div class="cart-row">
 				<div style="flex:2"></div>
 				<div style="flex:2"><strong>Item</strong></div>
