@@ -18,6 +18,6 @@ urlpatterns = [
 	path('viton/<int:id>/', views.virtualTryOn, name="viton"),
 	path('create/', views.createGroup, name="create"),
 	path('join/', views.joinGroup, name="join"),
-	path('addToCart/', views.joinGroup, name="addToCart"),
+	path('addToCart/', views.addToGroupCart, name="addToCart"),
 	path('myGroup/', views.myGroup, name="myGroup"),
 ]

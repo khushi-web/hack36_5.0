@@ -6,12 +6,12 @@
     <div class="row">
         {% for product in products %}
         <div class="col-lg-4">
-            
             <img class="thumbnail" src="{{product.imageURL}}">
             <div class="box-element product" style="background-color: white;">
                 <hr>
                 <h6><strong>{{product.name}}</strong></h6>
-                <button data-product="{{product.id}}" data-toggle="modal" data-target="#ModalCreateForm" data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+                <button data-product="{{product.id}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Personal Cart</button>
+                <button data-product="{{product.id}}" data-toggle="modal" data-target="#ModalAddForm" class="btn btn-outline-secondary add-btn update-cart">Add to Group Cart</button>
                   <div id="ModalAddForm" class="modal fade">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -22,12 +22,13 @@
                                 <form role="form" method="GET" action="{% url 'addToCart' %}">
                                     <input type="hidden" name="_token" value="">
                                     <input type="number" name="product_id" value={{product.id}}>
+                                    <input type="number" name="product_id" value={{product.id}}>
                                     <div class="form-group">
                                         <label class="control-label">Add To:</label>
                                         <div>
                                             <select id="group_id" name="group_id">
                                                 {% for group in groups %}
-                                                <option value={{group.id}}>{{group.group_name}}</option>
+                                                    <option value={{group.id}}>{{group.group_name}}</option>
                                                 {% endfor %}
                                             </select>
                                         </div>
@@ -44,7 +45,6 @@
                 </div><!-- /.modal -->
                 <a class="btn btn-outline-success" href="/product/{{product.id}}">View</a>
                 <h4 style="display: inline-block; float: right"><strong>${{product.price}}</strong></h4>
-
             </div>
         </div>
         {% endfor %}

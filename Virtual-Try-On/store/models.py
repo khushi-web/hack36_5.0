@@ -18,24 +18,6 @@ class VitonUploads(models.Model):
 			url = ''
 		return url
 
-class Customer(models.Model):
-	user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)
-	name = models.CharField(max_length=200, null=True, blank=True)
-	email = models.CharField(max_length=200)
-	image = models.ImageField(upload_to='userImages', null=True, blank=True, default='userImages/1.jpg')
-	group = models.ManyToManyField(Group)
-
-	def __str__(self):
-		return self.email
-	
-	@property
-	def imageURL(self):
-		try:
-			url = self.image.url
-		except:
-			url = ''
-		return url
-
 class Product(models.Model):
 	name = models.CharField(max_length=200)
 	price = models.FloatField()
@@ -52,6 +34,32 @@ class Product(models.Model):
 		except:
 			url = ''
 		return url
+		
+class GroupCart(models.Model):
+	group_name = models.CharField(max_length=100, blank=False, null=False)
+	items = models.ManyToManyField(Product)
+	#members = models.ManyToManyField(Customer)
+	group_code = models.CharField(max_length=10, null=False)
+
+class Customer(models.Model):
+	user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)
+	name = models.CharField(max_length=200, null=True, blank=True)
+	email = models.CharField(max_length=200)
+	image = models.ImageField(upload_to='userImages', null=True, blank=True, default='userImages/1.jpg')
+	group = models.ManyToManyField(GroupCart)
+
+	def __str__(self):
+		return self.email
+	
+	@property
+	def imageURL(self):
+		try:
+			url = self.image.url
+		except:
+			url = ''
+		return url
+
+
 
 class Order(models.Model):
 	customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True, blank=True)
@@ -106,11 +114,7 @@ class ShippingAddress(models.Model):
 	def __str__(self):
 		return self.address
 
-class GroupCart(models.Model):
-	group_name = models.CharField(max_length=100, blank=False, null=False)
-	items = models.ManyToManyField(Product)
-	members = models.ManyToManyField(Customer)
-	group_code = models.CharField(max_length=10, null=False)
+
 
 class GroupOrder(models.Model):
 	groupdesc = models.ForeignKey(GroupCart, on_delete=models.SET_NULL, null=True, blank=True)

@@ -218,14 +218,14 @@ def processOrder(request):
 def createGroup(request):
     if request.user:
         customer = Customer.objects.get(id = request.user.id)
-        group = GroupCart(
+        GroupCart.objects.create(
             group_name = request.GET['group_name'],
         )
-        group.save()
+        group = GroupCart.objects.get(group_name = request.GET['group_name'])
         group_code = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 5)) + 'r' + str(group.id)
         group.group_code = group_code
-        group.members.add(customer)
         group.save()
+        customer.group.add(group)
         return redirect('store')
     else:
         return JsonResponse("Not allowed, login first", safe=False)
@@ -253,14 +253,17 @@ def deleteGroup(request):
 def addToGroupCart(request):
     item = Product.objects.get(id = request.GET['product_id'])
     if item:
-        group = GroupCart.objects.get(id = request.GET['group_id'])
-        if group: # add condition that the current customer is a part of the group
-            group.items.add(item)
-            group.save()
+        if 'group_id' in request.GET:
+            group = GroupCart.objects.get(id = request.GET['group_id'])
+            if group: # add condition that the current customer is a part of the group
+                group.items.add(item)
+                group.save()
+        return redirect('store')
     else:
         return JsonResponse("product does not exist")
 
 def myGroup(request):
     groups = Customer.objects.get(id = request.user.id).group
+    print(groups)
     context = {'groups': groups}
-    return (request, 'store/myGroups.html', context)
+    return render(request, 'store/myGroups.html', context)
