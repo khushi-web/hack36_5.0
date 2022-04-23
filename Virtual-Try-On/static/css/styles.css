@@ -81,6 +81,17 @@ li {
   background-color: #FFD700;
   overflow: hidden;
 }
+.hed{
+  background-color: #FFD700;
+}
+.image_resize {
+  width:290px;
+  height: 20px;
+  background-size: cover;
+}
+.image_resize img {
+  width:60%;
+}
 
 .nav {
   padding: 1.6rem 0;
@@ -242,7 +253,7 @@ li {
 
 /* Hero */
 .header .hero-img {
-  position: absolute;
+  position: relative;
   bottom: -10%;
   right: -5%;
   height: 70rem;
@@ -277,8 +288,8 @@ li {
 
 .btn {
   display: inline-block;
-  background-color: #fc7c7c;
   padding: 1.2rem 4rem;
+  background: #243a6f;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
@@ -325,7 +336,7 @@ li {
   }
 
   .hero-content {
-    top: 40%;
+    top: 10%;
     transform: translate(15%, -50%);
   }
 

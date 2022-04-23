@@ -1,5 +1,5 @@
 body{
-	background-color: #2F4F4F;
+	background-color: #100f0f;;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5,h6{
 
 .box-element{
 	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
-	background-color: #2F4F4F;
+	background-color: #efdccb;
 	border-radius: 4px;
 	padding: 10px;
 }
@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .bg-dark{
-	background-color: #ebc532!important;
+	background-color: #0f6194!important;
 }
 
 #cart-icon{
