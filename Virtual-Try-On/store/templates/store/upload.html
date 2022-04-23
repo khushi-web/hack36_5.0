@@ -1,0 +1,45 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<style>
+	.profile-pic{
+		max-width: 200px;
+		max-height:200px;
+		margin: 0 auto;
+	}
+</style>
+
+<br>
+{% if request.user.customer.name %}
+<h3 style="color: white;">Hey {{request.user.customer.name}}!</h3>
+{% else %}
+<h3 style="color: white;">Hey there!</h3>
+{% endif %}
+<hr style="border: 0.5px solid white">
+<div class="row" style="height: 500px">
+	<div class="col-md-4" style="height: 100%">
+		<div class="card card-body">
+			<a class="btn btn-warning" href="{% url 'store' %}"> &#8592; Back to Store</a>
+			<hr>
+			<h3 style="text-align: center">Account Settings</h3>
+			<hr>
+			<img class="profile-pic" src="{{request.user.customer.image.url}}" >
+		
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="card card-body">
+			
+			<form method="POST" action="" enctype="multipart/form-data">
+				{% csrf_token %}
+				{{form.as_p}}
+				<input class="btn btn-primary" type="submit" name="Update Information">
+				
+			</form>
+			<hr>
+			<p>Kindly note that your profile picture will be used when you choose to try any of our clothing products virtually.</p>
+		</div>
+	</div>
+</div>
+
+{% endblock content %}
