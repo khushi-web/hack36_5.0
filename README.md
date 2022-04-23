@@ -14,3 +14,11 @@ You can shop together while doing it safely. That’s great during COVID-19 and 
 A McKinsey report said more than half of consumers want stores to follow safety guidelines for the sake of both shoppers and workers, and 59% said it’s important that stores aren’t crowded. 
 
 The shift to e-commerce, which began years before the spread of COVID-19, has accelerated in 2020. E-commerce is expected to jump 18% in 2020, up from a previous forecast of 13%, according to a June eMarketer report. Total sales are expected to drop 10.5% to $4.894 billion.
+
+“People tend to have a higher probability to buy when with another person or a group [because] a friend affirms decisions that one might not make when shopping alone, so the shopper has a reduced risk perception of the purchase which makes the activity more careless,” says Max H. Brüggemann, director of customer engagement at Capgemini Invent.
+
+
+
+A few people, alone in their homes, chatting and browsing without looking at each other, can still feel a sense of togetherness, says Kahn. The pandemic has prompted cultural change in how people shop and spend time together: the popularity of live streaming, which has similar benefits like providing trust and transparency that e-commerce has traditionally lacked, has made its way from Asia to other countries globally. Group shopping could be the next shopping habit to make the leap.
+
+The shared shopping experience provides more credibility for a product and word of mouth has always been a strong driver for purchase
