@@ -138,6 +138,7 @@
       </ul>
       <div class="form-inline my-2 my-lg-0">
       {% if user.is_authenticated %}
+      <a href="{% url 'myGroup' %}"class="btn btn-secondary">My Groups</a>
       <a href="{% url 'logout' %}"class="btn btn-outline-secondary">Logout</a>
       {% else %}
         <a href="{% url 'login' %}"class="btn btn-outline-secondary">Login</a>

@@ -113,14 +113,16 @@ def home(request):
     products = Product.objects.all()
     context = {'products': products, 'cartItems': cartItems}
     return render(request, 'store/home.html', context)
+
 def cart(request):
     data = cartData(request)
 
     cartItems = data['cartItems']
     order = data['order']
     items = data['items']
+    groups = Customer.objects.get(id = request.user.id).group
 
-    context = {'items': items, 'order': order, 'cartItems': cartItems}
+    context = {'items': items, 'order': order, 'cartItems': cartItems, 'groups': groups}
     return render(request, 'store/cart.html', context)
 
 def productDetail(request, id):
@@ -247,3 +249,18 @@ def deleteGroup(request):
         group.delete()
     else:
         return JsonResponse("Not allowed, login first", safe=False)
+
+def addToGroupCart(request):
+    item = Product.objects.get(id = request.GET['product_id'])
+    if item:
+        group = GroupCart.objects.get(id = request.GET['group_id'])
+        if group: # add condition that the current customer is a part of the group
+            group.items.add(item)
+            group.save()
+    else:
+        return JsonResponse("product does not exist")
+
+def myGroup(request):
+    groups = Customer.objects.get(id = request.user.id).group
+    context = {'groups': groups}
+    return (request, 'store/myGroups.html', context)

@@ -1,0 +1,16 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+    <div>
+        <div>
+            <ul>
+                {% for group in groups.all %}
+                    <li><a>{{group.group_name}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div id="chat">
+
+        </div>
+    </div>
+{% endblock content %}
