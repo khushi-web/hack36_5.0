@@ -1,5 +1,5 @@
 
-<p align="center"><strong> <img src = "https://i.ibb.co/2sy4p5j/Built-At-Hack36.png"> </strong></p>
+<p align="center"><strong> <img src="https://cutt.ly/BuiltAtHack36" height=24px> </strong></p>
 
 
 
@@ -161,4 +161,4 @@ It would also help the retailers by:
  - [Anchal Yadav](https://github.com/anchal20198071)
 
 
- <img src = "https://i.ibb.co/2sy4p5j/Built-At-Hack36.png"> 
+<img src="https://cutt.ly/BuiltAtHack36" height=24px>
