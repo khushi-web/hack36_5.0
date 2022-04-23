@@ -1,7 +1,7 @@
 # hack36_5.0
 # ShopSquad
 
-Until now, online shopping has been lonely. It’s brought the benefits of accessing a wide variety of products with the convenience of being shipped to your door -- but it’s stripped out all human connection. With CartBuddy, we’re bringing you all three. Our users can go shopping with their friends and hang out at the same time. You can play games together and use the prizes to get discounts on griup order.
+Until now, online shopping has been lonely. It’s brought the benefits of accessing a wide variety of products with the convenience of being shipped to your door -- but it’s stripped out all human connection. With ShopSquad, we’re bringing you all three. Our users can go shopping with their friends and hang out at the same time. You can play games together and use the prizes to get discounts on griup order.
 Whether it’s holiday shopping with family, getting fashion advice from friends, eliciting apartment decorating help from the design-savvy people in your life, or just hanging out and in need of something to do, go shopping together again with CartBuddy.
 
 At ShopSquad, we want to be there for every moment of your online shopping journey. Whether that’s shopping with friends through Shop Party, finding inspiration for your life in our shoppable content feed, showing off your style choices on your own profile, or searching for and buying a quality product.
