@@ -2,7 +2,7 @@
 <p align="center"><strong> Hack36 5.0 </strong></p>
 
 
-# ShopSquad
+# ShopSquad - Turn ON your SHOP mode with your FAM
 A single platform to make sure you have an amazing online shopping experience.
 
 # Table of contents
@@ -151,4 +151,4 @@ It would also help the retailers by:
  - [Shreya Yadav](https://github.com/hackko-20)
  - [Khushi Agarwal](https://github.com/khushi-web)
  - [Aparna Mittal](https://github.com/apmit2704)
- - [Anchal Yadav](https://github.com/anchalyadav)
+ - [Anchal Yadav](https://github.com/anchal20198071)
