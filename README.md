@@ -1,9 +1,15 @@
 
-<p align="center"><strong> Hack36 5.0 </strong></p>
+<p align="center"><strong> <img src = "https://i.ibb.co/2sy4p5j/Built-At-Hack36.png"> </strong></p>
 
 
-# ShopSquad - Turn ON your SHOP mode with your FAM
+
+# Introduction : ShopSquad - Turn ON your SHOP mode with your FAM
 A single platform to make sure you have an amazing online shopping experience.
+
+# Demo Video Link
+
+# Presentation Link
+
 
 # Table of contents
 
@@ -124,7 +130,7 @@ In Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving/demo.sh:
 
 
 
-# Tech Stack
+# Technology Stack
  - **Website Frontend:** HTML, CSS, BootStrap, JavaScript
  - **Website Backend:** Python Django Framework, Paypal API for payment, Web Socket (Django Channels)
  - **Model Backend:** Python, MATLAB, Ananconda3, Libraries (Pytorch, Scikit-Image, OpenCV).
@@ -147,8 +153,11 @@ It would also help the retailers by:
  - Increasing online retail sales and 
  - Boosting conversion rates.
  
-# Team Members
+# Contributors
  - [Shreya Yadav](https://github.com/hackko-20)
  - [Khushi Agarwal](https://github.com/khushi-web)
  - [Aparna Mittal](https://github.com/apmit2704)
  - [Anchal Yadav](https://github.com/anchal20198071)
+
+
+ <img src = "https://i.ibb.co/2sy4p5j/Built-At-Hack36.png"> 
