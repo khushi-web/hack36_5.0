@@ -72,7 +72,14 @@ Working:<br />
 
 
 # Snapshots
-<img src="https://github.com/khushi-web/IMgbot/blob/main/vit4.png" height="500">
+<img src="https://github.com/khushi-web/hack36_5.0/blob/main/1.jpeg" height="500">
+<img src="https://github.com/khushi-web/hack36_5.0/blob/main/2.jpeg" height="500">
+<img src="https://github.com/khushi-web/hack36_5.0/blob/main/3.jpeg" height="500">
+<img src="https://github.com/khushi-web/hack36_5.0/blob/main/4.jpeg" height="500">
+<img src="https://github.com/khushi-web/hack36_5.0/blob/main/5.jpeg" height="500">
+<img src="https://github.com/khushi-web/hack36_5.0/blob/main/6.jpeg" height="500">
+<img src="https://github.com/khushi-web/hack36_5.0/blob/main/7.jpeg" height="500">
+<img src="https://github.com/khushi-web/hack36_5.0/blob/main/8.jpeg" height="500">
 
 
 # Features 
