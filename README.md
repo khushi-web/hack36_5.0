@@ -45,10 +45,10 @@ There are 2 major problems that we see in the present online shopping experience
 # Our Solution
 
 With ShopSquad, we’re bringing you all three. Our users can go shopping with their friends and hang out at the same time. You can play games together and use the prizes to get discounts on group order.
-ShopSquad is a social shopping platform where you can find more than 1,000 vetted brands across women’s and men’s clothing and accessories, makeup, skin care, home decor and more.You can shop together while doing it safely. That’s great during COVID-19 and great after COVID-19.
 
-The shared shopping experience provides more credibility for a product and word of mouth has always been a strong driver for purchase.
+**ShopSquad provides the ability to make groups and have a common cart within the group. Users in the group can share products, get feedback and validation, like or dislike an item, chat within the group and make payment. Each user can add item along with their address which will be delivered to them.** That’s great during COVID-19 and great after COVID-19.The shared shopping experience provides more credibility for a product and word of mouth has always been a strong driver for purchase.
 
+ShopSquad also provides the see how a product looks on the user before actually buying it.
 Broadly speaking, the end goal of our project here was to implement a virtual try-on network — essentially taking in-shop clothing and a person image as input to give output as an image of a person wearing those clothes and providing an in-built social chat application to enable users shop along with their family & friends with the comfort of being at home (social distancing in these dare times). The model implemented has been done with a focus on tops, with complete apparel transfer being potential future work.
 
 
