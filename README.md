@@ -4,7 +4,9 @@
 
 
 # Introduction : ShopSquad - Turn ON your SHOP mode with your FAM
-A single platform to make sure you have an amazing online shopping experience.
+ShopSquad is an all-in-one platform for a seamless online shopping experience. We aim to provide the experience of shopping with friends without actually being with them and at the same time user can virtually try on a product before buying it. 
+
+ShopSquad can be the next big hit in the online retail industry just like Netflix Watch Party has been a huge success in the entertainment industry  in pandemic.
 
 # Demo Video Link
 
