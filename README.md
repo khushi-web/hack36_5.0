@@ -31,18 +31,14 @@ ShopSquad can be the next big hit in the online retail industry just like Netfli
 
 There are 2 major problems that we see in the present online shopping experience which we intend to solve through this project :
 
-- Until now, online shopping has been lonely. It’s brought the benefits of accessing a wide variety of products with the convenience of being shipped to your door -- but it’s stripped out all human connection. A McKinsey report said more than half of consumers want stores to follow safety guidelines for the sake of both shoppers and workers, and 59% said it’s important that stores aren’t crowded. 
-The shift to e-commerce, which began years before the spread of COVID-19, has accelerated in 2020. E-commerce is expected to jump 18% in 2020, up from a previous forecast of 13%, according to a June eMarketer report. Total sales are expected to drop 10.5% to $4.894 billion.
-“People tend to have a higher probability to buy when with another person or a group because a friend affirms decisions that one might not make when shopping alone, so the shopper has a reduced risk perception of the purchase which makes the activity more careless,” says Max H. Brüggemann, director of customer engagement at Capgemini Invent.
+- **Until now, online shopping has been lonely.** It’s brought the benefits of accessing a wide variety of products with the convenience of being shipped to your door -- but it’s stripped out all human connection. A McKinsey report said more than half of consumers want stores to follow safety guidelines for the sake of both shoppers and workers, and 59% said it’s important that stores aren’t crowded.  “People tend to have a higher probability to buy when with another person or a group because a friend affirms decisions that one might not make when shopping alone, so the shopper has a reduced risk perception of the purchase which makes the activity more careless,” says Max H. Brüggemann, director of customer engagement at Capgemini Invent.
 
-
-- Ecommerce has been able to rake in the kind of popularity that it’s experiencing today all because of the fact that it without fail delivers an engaging shopping experience in the comfort of our homes our workplaces, you name it! In the times of ongoing worldwide pandemic, when isolation is the key to not spread the virus, we wanted to enable customers to get as close as possible to the experience of shopping in a store while they are very much in their own comfort zones. 
-As shoppers and most of us living by ourselves, we’re all guilty of indulging big time when taking impulsive decisions while shopping on our own. That’s where the advice of family and friends is much needed. It is definitely one most loved experience we’re missing out on while shopping online.
+- There are numerous fundamental challenges with online buying that businesses must overcome to remain competitive in today's market. Virtual try-on technology lets customers see how clothes fit themselves or an avatar, allowing them to virtually “try on” clothing before purchasing them. **In real life, fitting rooms are the heart of the shopping experience. Changing clothes and accessories creates a level of intimacy between a brand and consumer.**
 
 # Existing Solutions
 
-- There is no convenient platform to enable users to experience shopping with their loved ones.
-- A third party is often used to share items and get opinions from friends. 
+- There is no convenient platform to enable users to experience shopping with their loved ones. There are Shop Party which lets users to come online and shop together while streaming what they are seing. For this Users have to be online at the same time.
+- A third party like whatsApp is often used to share items and get opinions from friends. Our bussiness should not rely on a third party.
 - Right now users either have more than one accounts, one for personal use and one for sharing. This brings a lot of security issues and redundant work. ShopSquad solves this by allowing them to make groups within the application. 
 - There is always a doubt on whether an item will look as good as it looks on the site.  There are only a few website that provide virtual try on facility.
 
@@ -91,17 +87,17 @@ Working:<br />
    - Logged in user can see how a particular dress looks on them
    - User can make groups and add family & friends 
    - Groups have a shared cart and each member can add items to that cart
+   - Each member can add an item with their destination address
+   - Anyone from a group can do the payment and it will be notified to all others
  - **Future Scope:**
-   - Groups will have a chat feature where the members can talk and take each others feedback on every product
-   - Providing a real 3-D environment for an immersive and fun shopping experience
-   - Allowing customers to try on and assess different products virtually so that they can decide how a dress, necklace, or lipstick shade would look on them, or if a         piece of furniture would look good in their bedroom.
+   - Users can like and follow each other to see what others are up to
+   - Expanding Virtual Try On to full apparel including jewelry, lenses etc.,
+   - Using AR/VR to showcase how a product looks in real surrounding
+   - Discounts based on the number of members ordering an item in a group.
+   - Recommending items in the group based on the group interests
+   - Building an E-Commerce Metaverse
 
-- Group chat with a common group cart available where each user can add their own item with their address. They can share an item in the group chat and get everyone's opinion. This way they get the shopping experinece together with their friends without being together in real life.
-- A virtual-try-on feature through which the user can see how a particular cloth looks on them and can share the same with their friends.
-- Online games withing groups and prizes used for group discounts.
-- Discounts based on the number of members ordering an item in a group.
-- A user can follow their friend to see what they like which will prompt them to shop more.
-- Just like Netflix Watch Party and WeChat have been a huge success in the entertainment industry, ShopSquad is the future of the retail industry.
+
 
 # Installation
 Clone this Repository on your local machine by running the following command on your terminal - 
@@ -153,7 +149,7 @@ It would also help the retailers by:
  - Enhancing customer satisfaction
  - Reducing the number of returns
  - Increasing online retail sales and 
- - Boosting conversion rates.
+
  
 # Contributors
  Team Name : now_XOR_never
