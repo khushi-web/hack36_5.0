@@ -98,9 +98,9 @@ def store(request):
     cartItems = data['cartItems']
     order = data['order']
     items = data['items']
-
+    groups = Customer.objects.get(id = request.user.id).group
     products = Product.objects.all()
-    context = {'products': products, 'cartItems': cartItems}
+    context = {'products': products, 'cartItems': cartItems, 'groups': groups}
     return render(request, 'store/store.html', context)
 
 def home(request):
@@ -235,7 +235,8 @@ def joinGroup(request):
         customer = Customer.objects.get(id = request.user.id)
         group = GroupCart.objects.get(group_code = request.GET['group_code'])
         if group:
-            group.members.add(customer)
+            customer.group.add(group)
+            customer.save()
             return redirect('store')
         else:
             return JsonResponse("Invalid credentials for group")

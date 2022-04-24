@@ -1,13 +1,86 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
+    <h3> My Groups </h3>
+    <br>
     <div>
         <div>
-            <ul>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                      <th scope="col">Group Name</th>
+                      <th scope="col">Group Code</th>
+                    </tr>
+                </thead>
                 {% for group in groups.all %}
-                    <li><a>{{group.group_name}}</a></li>
+                <tbody>
+                    <tr>
+                        <td>{{group.group_name}}</td>
+                        <td><a href="https://www.flaticon.com/free-icons/link" title="link icons">{{group.group_code}}</a></td>
+                    </tr>
+                </tbody>
                 {% endfor %}
-            </ul>
+            </table>
+            <!-- <div class="accordion" id="accordionExample">
+                {% for group in groups.all %}
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        {{group.group_name}} @<a href="https://www.flaticon.com/free-icons/link" title="link icons">{{group.group_code}}</a>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {% for item in group.all.items %}
+                        <div class="cart-row">
+                            <div style="flex:2"><img class="row-image" src="{{item.product.imageURL}}"></div>
+                            <div style="flex:2"><p>{{item.product.name}}</p></div>
+                            <div style="flex:1"><p>${{item.product.price|floatformat:2}}</p></div>
+                            <div style="flex:1">
+                                <p class="quantity">{{item.quantity}}</p>
+                                <div class="quantity">
+                                    <img data-product="{{item.product.id}}" data-action="add" class="chg-quantity update-cart" src="{% static  'images/arrow-up.png' %}">
+                                    <img data-product="{{item.product.id}}" data-action="remove" class="chg-quantity update-cart" src="{% static  'images/arrow-down.png' %}">
+                                </div>
+                            </div>
+                            <div style="flex:1"><p>${{item.get_total|floatformat:2}}</p></div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+            </div> -->
+            <!-- <div class="accordion" id="accordionExample">
+                {% for group in groups.all %}
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        {{group.group_name}} @{{group.group_code}}
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {% for item in group.all.items %}
+                        <div class="cart-row">
+                            <div style="flex:2"><img class="row-image" src="{{item.product.imageURL}}"></div>
+                            <div style="flex:2"><p>{{item.product.name}}</p></div>
+                            <div style="flex:1"><p>${{item.product.price|floatformat:2}}</p></div>
+                            <div style="flex:1">
+                                <p class="quantity">{{item.quantity}}</p>
+                                <div class="quantity">
+                                    <img data-product="{{item.product.id}}" data-action="add" class="chg-quantity update-cart" src="{% static  'images/arrow-up.png' %}">
+                                    <img data-product="{{item.product.id}}" data-action="remove" class="chg-quantity update-cart" src="{% static  'images/arrow-down.png' %}">
+                                </div>
+                            </div>
+                            <div style="flex:1"><p>${{item.get_total|floatformat:2}}</p></div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div> -->
         </div>
         <div id="chat">
 

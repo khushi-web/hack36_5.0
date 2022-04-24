@@ -49,7 +49,7 @@
 		</div>
 		<br>
 		{% for group in groups.all %}
-			{% for item in group.items %}
+			{% for item in group.all.items %}
 			<div class="card card-body" style="background-color: white;">
 				<div class="cart-row">
 					<div style="flex:2"></div>
