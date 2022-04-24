@@ -9,8 +9,10 @@ ShopSquad is an all-in-one platform for a seamless online shopping experience. W
 ShopSquad can be the next big hit in the online retail industry just like Netflix Watch Party has been a huge success in the entertainment industry  in pandemic.
 
 # Demo Video Link
+https://www.youtube.com/watch?v=t5VAxhSRUdc
 
 # Presentation Link
+https://docs.google.com/presentation/d/1nhyiqzNRGGVxxhoxXYxGvHdcB_l0DO8J/edit?usp=sharing&ouid=112503485089482985297&rtpof=true&sd=true
 
 
 # Table of contents
