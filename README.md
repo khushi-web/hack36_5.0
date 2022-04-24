@@ -139,7 +139,7 @@ In Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving/demo.sh:
 # Technology Stack
  - **Website Frontend:** HTML, CSS, BootStrap, JavaScript
  - **Website Backend:** Python Django Framework, Paypal API for payment, Web Socket (Django Channels)
- - **Model Backend:** Python, MATLAB, Ananconda3, Libraries (Pytorch, Scikit-Image, OpenCV).
+ - **Model Backend:** Python, Ananconda3, Libraries (Pytorch, Scikit-Image, OpenCV).
 
 # Benefits
 With more and more customers preferring to shop from retailers offering virtual reality eCommerce stores, the popularity of VR-enabled eCommerce platforms is increasing by leaps and bounds across the globe. And with the ongoing worldwide pandemic, it has become the need of the hour.
